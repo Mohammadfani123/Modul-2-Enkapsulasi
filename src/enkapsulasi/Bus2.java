@@ -9,11 +9,11 @@ package enkapsulasi;
  *
  * @author Windows 10
  */
-public class Bis {
-    public int penumpang;
+public class Bus2 {
+     public int penumpang;
     public int maxPenumpang;
     
-    public Bis(int maxPenumpang){
+    public Bus2(int maxPenumpang){
         this.maxPenumpang = maxPenumpang;
         penumpang =0;
     }

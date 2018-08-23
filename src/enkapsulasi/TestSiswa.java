@@ -16,7 +16,9 @@ public class TestSiswa {
         siswa.setAge(23);
         siswa.getAddress("Malang");
         
-        System.out.print("Namae :" + siswa.getName() + " Absen : " + siswa.getAbsen() + " Address : " + siswa.getAddress());
+        System.out.println("Namae :" + siswa.getName());
+        System.err.println( " Absen : " + siswa.getAbsen());
+        System.out.println(" Address : " + siswa.getAddress());
     }
     
     

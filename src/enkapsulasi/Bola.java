@@ -9,42 +9,43 @@ package enkapsulasi;
  *
  * @author Windows 10
  */
+import java.lang.Math;
 public class Bola {
-   public int jarijari;
-   public double phi = 3.14;
+   public double jarijari=14;
+   public double diameter;
+   public double luaspermukaan;
+   public double volume;
+ 
    
-   
-   public int getjarijari(){
-        return jarijari;
+   public void setjarijari(double jarijari){
+       this.jarijari = jarijari;
    }
    
-   public double getphi(){
-       return phi;
-   }
    
-   public void setjarijari(int newjarijari){
-       jarijari = newjarijari;
-   }
-   
-   public void getphi(double newphi){
-       phi = newphi;
-   }
    public void showDiameter(){
-       double diameter;
-       diameter = 2*jarijari;
-       System.out.println("Diameter : "+diameter+"cm kuadrat");
+       this.diameter = 2*jarijari;
+       
    }
    
    public void showLuasPermukaan (){
-       double lp;
-       lp = 4*phi*jarijari*jarijari;
-       System.out.println("Luas Permukaan : "+lp);
+       this.luaspermukaan = 4*Math.PI*jarijari*jarijari;
+       
    }   
    
    public void showVolume(){
-       double v;
-       v = 4*phi*jarijari*jarijari*jarijari/3;
-       System.out.println("Volume : "+v);
+       this.volume = (4*Math.PI*jarijari*jarijari*jarijari)/3;
+       
    }
    
+   public void cetak(){
+       System.out.println("Jari-Jari : "+jarijari+" cm");
+       System.out.println("===========================");
+       System.out.println("Diameter  :"+diameter);
+       System.out.println("Luas Permukaan : "+luaspermukaan);
+       System.out.println("Volume : "+volume);
+       
+       
+       
+       
+   }
 }

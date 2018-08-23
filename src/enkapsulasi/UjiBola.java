@@ -11,6 +11,11 @@ package enkapsulasi;
  */
 public class UjiBola {
     public static void main(String[] args){
-        
+        Bola ball = new Bola ();
+        ball.setjarijari(14);
+        ball.showDiameter();
+        ball.showLuasPermukaan();
+        ball.showVolume();
+        ball.cetak();
     }
 }

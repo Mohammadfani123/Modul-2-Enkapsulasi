@@ -9,9 +9,9 @@ package enkapsulasi;
  *
  * @author Windows 10
  */
-public class UjiBis {
+public class UjiBus2 {
     public static void main(String[] args){
-        Bis bisBesar = new Bis(40);
+        Bus2 bisBesar = new Bus2(40);
         bisBesar.cetak();
         
         bisBesar.addPenumpang(15);
